@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Red+Rose:wght@300&family=Secular+One&display=swap');
+
+
+:root {
+    --primary-color: #2B211B;
+    --light-white-color: #EDCDB9;
+    --white-color: #fff;
+    --dark-yellow: #A77B06;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(./assets/pexels-ekaterina-bolovtsova-6077326.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    padding: 1rem rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+/* .navbar div:nth-child(1) {
+    flex: 0.8;
+} */
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.list .list-item {
+    color: var(--light-white-color);
+    font-family: 'Nunito',sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+.list li:nth-child(1) {
+    color: var(--white-color);
+}
+
+.button-small {
+    padding: 0.8rem 1.5rem;
+    color: var(--dark-yellow);
+    border: 1px solid var(--dark-yellow);
+    background: transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* End of Header ***********************************************************/
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-main {
+    padding: 3rem 6rem;
+    width: 100%;
+    height: 30vh;
+    background-color: var(--primary-color);
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.hero-heading {
+    flex: 0.4;
+    font-size: 4rem;
+    font-family: 'Secular One',sans-serif;
+    font-weight: 900;
+}
+..top-main h1{
+
+}
+
+.top-main p {
+    flex: 0.3;
+    font-size: 1.2rem;
+    font-family: 'Nunito',sans-serif;
+    color: var(--light-white-color);
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+.middle-main img {
+    width: 100%;
+    height: 50vh; 
+    background-size: contain;
+} 
+
+.bottom-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.bottom-container i {
+    padding: 0.8rem 1.4rem;
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    background-color: var(--dark-yellow);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1180px) {
+    /* .navbar div:nth-child(1) {
+        flex: 0.8;
+    } */
+
+    .logo {
+        width: 30%;
+    }
+
+    .list .list-item {
+        font-size: 0.8rem;
+    }
+
+    .button-small {
+        border-radius: 1rem;
+        font-size: 0.6rem;
+    }
+
+    .hero-heading {
+        font-size: 2.5rem;
+    }
+    
+    .top-main p {
+        flex: 0.5;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+        
+    /* .navbar div:nth-child(1) {
+        flex: 0.5;
+    } */
+
+    .logo {
+        width: 80%;
+    }
+
+    .list {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .list .list-item {
+        color: var(--light-white-color);
+        list-style: none;
+        font-family: 'Nunito',sans-serif;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+
+    .list li:nth-child(1) {
+        color: var(--white-color);
+    }
+
+    .button-small {
+        padding: 0.5rem 0.8rem;
+        margin-left: 1.2rem;
+        font-size: 0.7rem;
+    }
+
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .top-main p {
+        flex: 0.5;
+        font-size: 1rem;
+    }
+}
